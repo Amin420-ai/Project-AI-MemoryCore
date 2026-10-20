@@ -17,8 +17,10 @@ agent-sdk-dev/
 ├── skills/
 │   ├── agent-scaffold/
 │   │   └── SKILL.md             # Scaffold new Agent SDK projects
-│   └── sdk-debug/
-│       └── SKILL.md             # Diagnose and fix SDK errors
+│   ├── sdk-debug/
+│   │   └── SKILL.md             # Diagnose and fix SDK errors
+│   └── temperature-log/
+│       └── SKILL.md             # Food & Beverage HACCP temperature log
 ├── commands/
 │   └── agent-sdk-docs.md        # /agent-sdk-docs quick reference
 └── README.md
@@ -50,6 +52,23 @@ Auto-triggers when you share an error or describe a problem with the Anthropic S
 - Network / timeout errors
 
 Classifies the error, asks for context if needed, and provides a targeted code fix.
+
+### `temperature-log` — Food & Beverage HACCP Log Builder
+Auto-triggers when you say things like:
+- "temperature log"
+- "create a temperature log"
+- "HACCP log"
+- "food safety log"
+- "cooling log" / "cold storage log"
+
+Produces a fully structured temperature log deliverable using the HACCP framework, including:
+- Executive summary and context section
+- Critical Control Points (CCPs) with danger zone references (40°F–140°F)
+- Actionable recommendations with specific numbers and timelines
+- Implementation table with owner and priority columns
+- Success metrics benchmarked against industry targets (Food Cost %, Labor Cost %, Prime Cost %)
+- Risk/mitigation matrix
+- After-completion memory integration (`memory.md`, `knowledge-nominations.md`, `Task Board.md`)
 
 ## Commands
 
