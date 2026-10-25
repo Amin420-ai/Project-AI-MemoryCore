@@ -1,0 +1,14 @@
+{
+  "name": "project-ai-memorycore",
+  "version": "1.0.0",
+  "description": "CLI for managing AI companion memory files",
+  "bin": {
+    "memcore": "./memcore.js"
+  },
+  "scripts": {
+    "start": "node memcore.js status"
+  },
+  "dependencies": {
+    "@open-gitagent/opengap": "^0.4.0"
+  }
+}

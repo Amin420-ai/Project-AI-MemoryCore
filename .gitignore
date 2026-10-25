@@ -1,4 +1,5 @@
 # Basic gitignore
+node_modules/
 /[Tt]emp/
 *.exe
 
